@@ -9,9 +9,14 @@ const DEFAULT_MP3 = "exercises/eights/mp3s/eights_144.wav";
 function ExerciseManager() {
   const [currentPDF, setCurrentPDF] = useState(DEFAULT_PDF);
   const [currentMP3, setCurrentMP3] = useState(DEFAULT_MP3);
+
+  function updateInstrument(instrument) {
+    setCurrentPDF(`exercises/eights/pdfs/eights_${instrument}.pdf`);
+  }
+
   return (
     <>
-      <PdfDropdown setCurrentPDF={setCurrentPDF} />
+      <PdfDropdown setCurrentPDF={setCurrentPDF} updateInstrument={updateInstrument}/>
       <ExerciseViewer pdfLink={currentPDF} />
       <ExercisePlayer mp3Link={currentMP3} />
     </>

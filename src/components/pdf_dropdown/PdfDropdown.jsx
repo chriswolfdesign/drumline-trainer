@@ -12,15 +12,10 @@ const DROPDOWN_STYLE = {
 };
 
 function PdfDropdown(props) {
-  function changePDF(e) {
-    if (e.target.value === "snare") {
-      props.setCurrentPDF("exercises/eights/pdfs/eights_snare.pdf");
-    } else if (e.target.value === "bass") {
-      props.setCurrentPDF("exercises/eights/pdfs/eights_bass.pdf");
-    } else {
-      props.setCurrentPDF("exercises/eights/pdfs/eights_quads.pdf");
-    }
+  function instrumentChange(e) {
+    props.updateInstrument(e.target.value);
   }
+
   return (
     <FormControl sx={DROPDOWN_STYLE}>
       <InputLabel
@@ -37,7 +32,7 @@ function PdfDropdown(props) {
           id: "uncontrolled-native",
         }}
         sx={NATIVE_SELECT_STYLE}
-        onChange={changePDF}
+        onChange={instrumentChange}
       >
         <option value="snare">Snare</option>
         <option value="quads">Quads</option>
