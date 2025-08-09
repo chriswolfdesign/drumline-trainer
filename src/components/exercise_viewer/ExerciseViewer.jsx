@@ -11,7 +11,7 @@ const CARD_STYLE = {
   height: "75vh",
 };
 
-function ExerciseViewer() {
+function ExerciseViewer(props) {
   return (
     <Card sx={CARD_STYLE}>
       <CardHeader>Exercise time</CardHeader>
@@ -20,7 +20,7 @@ function ExerciseViewer() {
           title="Exercise viewer"
           width="80%"
           height="100%"
-          data="exercises/example/example.pdf"
+          data={props.pdfLink}
         >
           Exercise
         </object>
