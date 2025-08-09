@@ -1,13 +1,11 @@
-import ExercisePlayer from "./components/exercise_player/ExercisePlayer";
-import ExerciseViewer from "./components/exercise_viewer/ExerciseViewer";
+import ExerciseManager from "./components/exercise_manager/ExerciseManager";
 import Header from "./components/header/Header";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <ExerciseViewer />
-      <ExercisePlayer />
+      <ExerciseManager />
     </div>
   );
 }

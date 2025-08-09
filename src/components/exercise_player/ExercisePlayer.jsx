@@ -5,10 +5,10 @@ const CARD_STYLE = {
   textAlign: "center",
 };
 
-function ExercisePlayer() {
+function ExercisePlayer(props) {
   return (
     <Card sx={CARD_STYLE}>
-      <ReactAudioPlayer src="exercises/example/example.mp3" controls={true} />
+      <ReactAudioPlayer src={props.mp3Link} controls={true} />
     </Card>
   );
 }
