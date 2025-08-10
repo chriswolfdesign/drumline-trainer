@@ -26,7 +26,7 @@ function TempoDropdown(props) {
         Tempo
       </InputLabel>
       <NativeSelect
-        defaultValue="144"
+        defaultValue="100"
         inputProps={{
           name: "tempo",
           id: "uncontrolled-native",
@@ -34,7 +34,17 @@ function TempoDropdown(props) {
         sx={NATIVE_SELECT_STYLE}
         onChange={tempoChange}
       >
+        <option value="100">100</option>
+        <option value="108">108</option>
+        <option value="120">120</option>
+        <option value="132">132</option>
         <option value="144">144</option>
+        <option value="152">152</option>
+        <option value="160">160</option>
+        <option value="172">172</option>
+        <option value="180">180</option>
+        <option value="192">192</option>
+        <option value="200">200</option>
         <option value="208">208</option>
       </NativeSelect>
     </FormControl>

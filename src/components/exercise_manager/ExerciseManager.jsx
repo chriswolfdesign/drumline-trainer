@@ -5,7 +5,7 @@ import PdfDropdown from "../pdf_dropdown/PdfDropdown";
 import TempoDropdown from "../tempo_dropdown/TempoDropdown";
 
 const DEFAULT_PDF = "exercises/eights/pdfs/eights_snare.pdf";
-const DEFAULT_MP3 = "exercises/eights/mp3s/eights_144.wav";
+const DEFAULT_MP3 = "exercises/eights/mp3s/eights_100.wav";
 
 function ExerciseManager() {
   const [currentPDF, setCurrentPDF] = useState(DEFAULT_PDF);
