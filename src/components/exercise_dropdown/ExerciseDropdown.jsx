@@ -38,6 +38,7 @@ function ExerciseDropdown(props) {
         <option value="sixteenth_note_timing">Sixteenth Note Timing</option>
         <option value="triplet_timing">Triplet Timing</option>
         <option value="bucks">Bucks</option>
+        <option value="triple_bucks">Triple Bucks</option>
       </NativeSelect>
     </FormControl>
   );
